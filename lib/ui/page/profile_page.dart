@@ -7,7 +7,7 @@ import 'package:task2/ui/page/stamp_book_wiget.dart';
 import 'package:task2/ui/page/storis_widget.dart';
 
 class HomePage extends StatefulWidget {
-  HomePage({super.key});
+  const HomePage({super.key});
 
   @override
   State<HomePage> createState() => _HomePageState();
@@ -68,7 +68,7 @@ class _HomePageState extends State<HomePage> {
                               ),
                               child: Text(
                                 isfolloing ? 'Following' : 'Follow',
-                                style: TextStyle(
+                                style: const TextStyle(
                                     color: Color.fromARGB(255, 220, 207, 233),
                                     fontSize: 11),
                               ),
@@ -99,7 +99,7 @@ class _HomePageState extends State<HomePage> {
                       height: 40,
                       // color: Colors.red,
                       child: Padding(
-                        padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
+                        padding: const EdgeInsets.fromLTRB(40, 0, 20, 0),
                         child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             //crossAxisAlignment: CrossAxisAlignment.center,
